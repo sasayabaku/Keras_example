@@ -15,6 +15,7 @@ from keras.callbacks import TensorBoard
 from keras.datasets import cifar10
 from keras.utils import np_utils
 import pydot
+import sys
 
 # NUM_CLASSES = 50
 
@@ -39,7 +40,6 @@ X_test /= 255.0
 # one-hotエンコーディング
 Y_train = np_utils.to_categorical(y_train, nb_classes)
 Y_test = np_utils.to_categorical(y_test, nb_classes)
-
 
 ### add for TensorBoard
 import keras.callbacks
