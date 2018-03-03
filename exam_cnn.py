@@ -16,7 +16,6 @@ from keras.utils import np_utils
 
 import os
 
-
 # NUM_CLASSES = 50
 
 img_rows, img_cols = 32, 32
