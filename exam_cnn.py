@@ -14,7 +14,8 @@ from keras.callbacks import TensorBoard
 
 from keras.datasets import cifar10
 from keras.utils import np_utils
-import pydot
+import os
+
 
 # NUM_CLASSES = 50
 
@@ -96,3 +97,9 @@ TensorBoard(log_dir='./logs')
 KTF.set_session(old_session)
 
 ###
+
+## 学習済みモデルの保存
+json_string = model.to_json()
+open(os.path.join('./', 'cnn_model.json'), 'w').write(json_string)
+
+model.save_weights(os.path.join('./', 'cnn_model_weight.hdf5'))
