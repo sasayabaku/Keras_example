@@ -1,6 +1,7 @@
 # encoding:utf-8
 
 # import numpy as np
+# import sys
 # import matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.layers.convolutional import Conv2D
@@ -13,8 +14,8 @@ from keras.callbacks import TensorBoard
 
 from keras.datasets import cifar10
 from keras.utils import np_utils
-
 import os
+
 
 # NUM_CLASSES = 50
 
